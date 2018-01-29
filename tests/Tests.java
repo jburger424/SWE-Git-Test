@@ -7,5 +7,7 @@ public class Tests {
   @Test
   public void add(){
     assertEquals(0,adder.add(""),"empty string does NOT return 0");
+    assertEquals(1,adder.add("1"),"'1' does NOT return 1");
+    assertEquals(101,adder.add("101"),"'101' does NOT return 101");
   }
 }
