@@ -9,5 +9,7 @@ public class Tests {
     assertEquals(0,adder.add(""),"empty string does NOT return 0");
     assertEquals(1,adder.add("1"),"'1' does NOT return 1");
     assertEquals(101,adder.add("101"),"'101' does NOT return 101");
+    assertEquals(4,adder.add("1,3"),"'1,3' does NOT return 4");
+    assertEquals(101,adder.add("-1,3"),"'-1,3' does NOT return 2");
   }
 }
